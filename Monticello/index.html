@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./owl/owl.carousel.min.css">
+      <link rel="stylesheet" href="./owl/owl.theme.default.min.css">
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="./icomoon/style.css">
+      <link rel="stylesheet" href="./css/animate.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+      <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+      <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+      <title>MONTICELLO</title>
+   </head>
+
+   <body>
+      <div class="header__nav" id="header__nav">
+         <div class="logo">
+            <img src="./images/Logo.png" alt="logo" class="logo__img">
+         </div>
+         <nav class="nav">
+            <ul class="nav__list">
+               <li class="nav__item"><span class="nav__item_circle" id="aboutus__circle"></span><a href="#header"
+                     class="nav__link">ABOUT US</a>
+               </li>
+               <li class="nav__item"><span class="nav__item_circle" id="projects__circle"></span><a href="#projects"
+                     class="nav__link">PROJECTS</a>
+               </li>
+               <li class="nav__item"><span class="nav__item_circle" id="news__circle"></span><a href="#news"
+                     class="nav__link">NEWS</a>
+               </li>
+               <li class="nav__item"><span class="nav__item_circle" id="contacts__circle"></span><a href="#contacts"
+                     class="nav__link">CONTACTS</a>
+               </li>
+            </ul>
+         </nav>
+         <div class="social">
+            <a href="https://www.facebook.com/" class="social__link" target="blank"><span
+                  class="icon-facebook social__icon"></span></a>
+            <a href="https://www.twitter.com/" class="social__link" target="blank"><span
+                  class="icon-twitter social__icon"></span></a>
+            <a href="https://www.instagram.com/" class="social__link" target="blank"><span
+                  class="icon-instagram social__icon"></span></a>
+         </div>
+      </div>
+      <button id="burger__menu">MENU</button>
+      <header class="header" id="header">
+         <div class="header__container">
+            <div class="owl-carousel">
+               <div class="slider">
+                  <p class="slider__title">SIMPLE & MORDERN</p>
+                  <p class="slider__subtitle">We make the world's beautiful every day</p>
+               </div>
+               <div class="slider">
+                  <p class="slider__title">MORDERN & SIMPLE</p>
+                  <p class="slider__subtitle">We make the world's beautiful every day</p>
+               </div>
+               <div class="slider">
+                  <p class="slider__title">LOREM & IPSUM</p>
+                  <p class="slider__subtitle">We make the world's beautiful every day</p>
+               </div>
+            </div>
+            <div class="arrow__down">
+               <a href="#projects" class="arrow__down_link"><span class="icon-chevron-down"></span></a>
+            </div>
+         </div>
+      </header>
+      <main class="main">
+         <div class="scroll_up" id="scroll_up">
+            <a class="scroll_up_link" href="#header"><img class="up_arrow" src="./images/upload.png"><br>Scroll</a>
+         </div>
+         <section class="projects" id="projects">
+            <p class="projects__headtitle">WHAT WE DO</p>
+            <div class="projects__list">
+               <section class="projects__item">
+                  <img src="./images/projects_1back.png" alt="background" class="projects__backimg">
+                  <img src="./images/projects_1.png" alt="image" class="projects__img">
+               </section>
+               <section class="projects__item">
+                  <p class="projects__subtitle">ONE WORLD</p>
+                  <p class="projects__title">TRADE CENTER</p>
+                  <p class="projects__content">Increasing prosperity in our lives can be accomplished by having the right
+                     frame of mind. The truth is, our thoughts are very powerful.</p>
+                  <button class="projects__btn">MORE DETAILS</button>
+                  <p class="projects__place"><span class="icon-location"></span>New York City, United States - 1776 feet
+                  </p>
+               </section>
+            </div>
+            <div class="projects__list projects__list_second">
+               <section class="projects__item">
+                  <img src="./images/projects_2back.png" alt="background" class="projects__backimg_second">
+                  <img src="./images/projects_2.png" alt="image" class="projects__img projects__img_second">
+               </section>
+               <section class="projects__item">
+                  <p class="projects__subtitle">INTERNATIONAL</p>
+                  <p class="projects__title">COMMERCE CENTER</p>
+                  <p class="projects__content">Successful businesses have many things in common, today we’ll look at the
+                     big ‘R’ of recognition and how a digital advertising network may help.
+                  </p>
+                  <button class="projects__btn">MORE DETAILS</button>
+                  <p class="projects__place"><span class="icon-location"></span>Hong Kong - 1588 Feet
+                  </p>
+               </section>
+            </div>
+         </section>
+      </main>
+      <section class="news" id="news">
+         <section class="news__container">
+            <p class="news__headtitle">LATEST NEWS</p>
+            <div class="owl-carousel_second">
+               <div class="news__slider_item">
+                  <img src="./images/news_slider1.png" alt="img" class="news__slider_img">
+                  <p class="news__title">See The Unmatched Beauty Of The Great.</p>
+                  <p class="news__subtitle">Free directories: directories are perfect for customers that are... </p>
+                  <div class="news__autor">
+                     <img src="./images/news_autor1.png" alt="autor" class="news__autor_img">
+                     <div class="news__autor_text">
+                        <p class="news__autor_name">Isaac Dunn</p>
+                        <p class="news__autor_date">09 Feb 2017</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="news__slider_item">
+                  <img src="./images/news_slider2.png" alt="img" class="news__slider_img">
+                  <p class="news__title">Effective Advertising Pointers.</p>
+                  <p class="news__subtitle">Having a home based business is a wonderful asset to your life...</p>
+                  <div class="news__autor">
+                     <img src="./images/news_autor2.png" alt="autor" class="news__autor_img">
+                     <div class="news__autor_text">
+                        <p class="news__autor_name">Dominic Freeman</p>
+                        <p class="news__autor_date">24 Apr 2017</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="news__slider_item">
+                  <img src="./images/news_slider3.png" alt="img" class="news__slider_img">
+                  <p class="news__title">Hypnotize Yourself Into The Ghost.</p>
+                  <p class="news__subtitle">There are many things that are important to catalog design....</p>
+                  <div class="news__autor">
+                     <img src="./images/news_autor3.png" alt="autor" class="news__autor_img">
+                     <div class="news__autor_text">
+                        <p class="news__autor_name">Alice Ward </p>
+                        <p class="news__autor_date">30 Dec 2017</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="news__slider_item">
+                  <img src="./images/news_slider4.jpg" alt="img" class="news__slider_img">
+                  <p class="news__title">See The Unmatched Beauty Of The Great.</p>
+                  <p class="news__subtitle">Free directories: directories are perfect for customers that are... </p>
+                  <div class="news__autor">
+                     <img src="./images/news_autor1.png" alt="autor" class="news__autor_img">
+                     <div class="news__autor_text">
+                        <p class="news__autor_name">Henry Cooper</p>
+                        <p class="news__autor_date">17 Jun 2015</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="news__slider_item">
+                  <img src="./images/news_slider5.jpg" alt="img" class="news__slider_img">
+                  <p class="news__title">Effective Advertising Pointers.</p>
+                  <p class="news__subtitle">Having a home based business is a wonderful asset to your life...</p>
+                  <div class="news__autor">
+                     <img src="./images/news_autor2.png" alt="autor" class="news__autor_img">
+                     <div class="news__autor_text">
+                        <p class="news__autor_name">John Willson</p>
+                        <p class="news__autor_date">13 May 2018</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </section>
+      <section class="gallery" id="gallery">
+         <p class="gallery__title">GALLERY</p>
+         <div class="gallery__container">
+            <select name="gallery_select" id="gallery_select" class="gallery_select">
+               <option value="NY">New York</option>
+               <option value="LON">London</option>
+               <option value="MDR">Madrid</option>
+            </select>
+            <div class="gallery__list">
+               <div class="gallery__img gallery__img1">
+                  <img src="./images/gallery_newyork1.jpg" alt="city">
+               </div>
+               <div class="gallery__img gallery__img2">
+                  <img src="./images/gallery_newyork2.jpg" alt="city">
+               </div>
+               <div class="gallery__img gallery__img3">
+                  <img src="./images/gallery_newyork3.jpg" alt="city">
+               </div>
+               <div class="gallery__img gallery__img4">
+                  <img src="./images/gallery_newyork4.jpg" alt="city">
+               </div>
+               <div class="gallery__img gallery__img5">
+                  <img src="./images/gallery_newyork5.jpg" alt="city">
+               </div>
+            </div>
+            <div class="gallery__btn_list">
+               <button class="gallery__btn">SEE MORE</button>
+            </div>
+         </div>
+      </section>
+      <div id="map"></div>
+      <footer class="footer">
+         <section class="contacts" id="contacts">
+            <div class="contacts_field">
+               <p class="contacts__field_title">GET IN TOUCH</p>
+               <div class="contacts__form">
+                  <div class="contacts__info">
+                     <p class="contacts__info_item"><span class="icon-location"></span> 91 Nolan Extensions Suite 670</p>
+                     <p class="contacts__info_item"><span class="icon-phone"></span><a href="tel:+0013568682454"> +001
+                           356-868-2454</a></p>
+                     <p class="contacts__info_item"><span class="icon-inbox"></span><a href="mailto:gahuy93@gmail.com">
+                           gahuy93@gmail.com</a>
+                     </p>
+                     <p class="contacts__info_item"><span class="icon-clock"></span> From 07:05AM to 19:30PM</p>
+                  </div>
+                  <div class="contacts__input">
+                     <input type="text" placeholder="Enter your name" class="contacts__name" required>
+                     <input type="email" placeholder="Enter your email" class="contacts__email" required>
+                     <button class="contacts_btn">SUBMIT</button>
+                  </div>
+               </div>
+            </div>
+            <div class="footer__container">
+               <div class="logo">
+                  <img src="./images/Logo.png" alt="logo" class="logo__img">
+                  <p class="copyright">Copyrights © 2017 Monticello Group | Made with love by Ga Huy</p>
+               </div>
+               <div class="social">
+                  <a href="https://www.facebook.com/" class="social__link" target="blank"><span
+                        class="icon-facebook social__icon"></span></a>
+                  <a href="https://www.twitter.com/" class="social__link" target="blank"><span
+                        class="icon-twitter social__icon"></span></a>
+                  <a href="https://www.instagram.com/" class="social__link" target="blank"><span
+                        class="icon-instagram social__icon"></span></a>
+               </div>
+            </div>
+         </section>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <script src="./owl/owl.carousel.min.js"></script>
+      <script src="./js/script.js"></script>
+   </body>
+</html>
