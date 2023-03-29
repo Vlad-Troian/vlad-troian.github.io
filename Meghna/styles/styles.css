@@ -1,0 +1,390 @@
+/*Reset css*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 100%;
+  list-style: none;
+  transition-duration: 0.5s; }
+
+body {
+  line-height: 1.5; }
+
+h1, h2, h3, h4, h5, h6, a, p, span, i, b, li, input, textarea {
+  font-family: 'Oswald', sans-serif; }
+
+a, p, span, h1, h2 {
+  color: white; }
+
+h1 {
+  font-size: 70px;
+  font-weight: 600; }
+
+h2 {
+  font-size: 38px;
+  font-weight: 600; }
+
+h3 {
+  font-size: 24px; }
+
+/*Button*/
+.btn {
+  border: 1px solid #4e595f;
+  padding: 10px 15px;
+  box-sizing: content-box;
+  text-align: center;
+  transition-duration: 0.5s;
+  color: white;
+  background: transparent; }
+
+.btn:hover {
+  background: rgba(108, 182, 112, 0.7);
+  transition-duration: 0.5s; }
+
+:focus::-webkit-input-placeholder {
+  color: transparent; }
+
+:focus::-moz-placeholder {
+  color: transparent; }
+
+:focus:-moz-placeholder {
+  color: transparent; }
+
+:focus:-ms-input-placeholder {
+  color: transparent; }
+
+/*Icons Bootstrap*/
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg#FontAwesome") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: FontAwesome, serif;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit; }
+
+/*End of Icons Bootstrap*/
+header {
+  -webkit-background-size: cover;
+  background-size: cover;
+  background: url("../img/slides/1.jpg") no-repeat fixed top center;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  padding-top: 35vh; }
+  header h1 {
+    margin-top: 20px;
+    text-shadow: 0 0 10px #000;
+    color: white;
+    animation: logo1 1.5s;
+    position: relative; }
+  header img {
+    animation: logo 1s;
+    transition-duration: 0s; }
+
+nav {
+  width: 100%;
+  height: 60px;
+  padding: 0 7% 0 5%;
+  color: #ddd;
+  background: #2B2C30;
+  border-bottom: 1px solid #666;
+  z-index: 999; }
+  nav img {
+    float: left;
+    margin-top: 12px; }
+  nav ul {
+    height: 100%;
+    float: right; }
+    nav ul li {
+      display: inline-block;
+      margin-right: 15px;
+      margin-left: 10px;
+      height: 60px;
+      padding-top: 19px;
+      cursor: pointer; }
+      nav ul li:hover a {
+        color: #6cb670; }
+      nav ul li a {
+        font-size: 14px; }
+
+/* All titles*/
+h2 {
+  position: relative; }
+  h2::before, h2::after {
+    content: " ";
+    position: absolute;
+    display: block;
+    background: #ffffff; }
+  h2::after {
+    width: 320px;
+    height: 2px;
+    top: 70px;
+    left: calc(50% - 160px); }
+  h2::before {
+    width: 40px;
+    height: 15px;
+    top: 63px;
+    left: calc(50% - 20px); }
+
+.greenTxt {
+  color: #6CB670; }
+
+/*End of All titles*/
+main {
+  width: 100%;
+  background: #333; }
+  main .block {
+    padding: 70px 0 70px 0;
+    text-align: center;
+    background: #333439; }
+    main .block > ul {
+      margin-top: 110px;
+      margin-bottom: 70px; }
+      main .block > ul > li {
+        display: inline-block;
+        width: 30%;
+        max-width: 474px;
+        margin-left: 15px;
+        margin-right: 15px; }
+        main .block > ul > li p {
+          font-family: 'Ubuntu', sans-serif; }
+        main .block > ul > li i {
+          border-bottom: 2px solid #ddd; }
+    main .block p, main .block a, main .block h3 {
+      color: #ddd; }
+  main .borderForIcon {
+    width: 146px;
+    height: 92px;
+    border-right: 2px solid #ddd;
+    border-left: 2px solid #ddd;
+    position: relative;
+    margin: auto auto 50px; }
+    main .borderForIcon:before, main .borderForIcon:after {
+      content: ' ';
+      width: 102px;
+      height: 100px;
+      transform: scaleY(0.5774) rotate(45deg);
+      border: 2px solid #ddd;
+      position: absolute; }
+    main .borderForIcon:before {
+      left: 19px;
+      top: -51px;
+      border-right: none;
+      border-bottom: none; }
+    main .borderForIcon:after {
+      left: 19px;
+      top: 41px;
+      border-left: none;
+      border-top: none; }
+  main .icon-pic1::before, main .icon-pic2::before, main .icon-pic3::before {
+    display: block;
+    color: #ddd;
+    font-size: 70px; }
+  main .icon-pic1::before {
+    content: "\f0eb"; }
+  main .icon-pic2::before {
+    content: "\f0c0"; }
+  main .icon-pic3::before {
+    content: "\f201"; }
+  main .videoPres {
+    width: 100%;
+    padding: 70px 0 70px 0;
+    text-align: center;
+    background: #2B2C30; }
+    main .videoPres h3 {
+      margin-bottom: 20px; }
+    main .videoPres iframe, main .videoPres .videoDescr {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 15px;
+      margin-right: 15px; }
+    main .videoPres .videoDescr {
+      width: 40%;
+      text-align: left; }
+      main .videoPres .videoDescr p {
+        font-family: Ubuntu, serif; }
+    main .videoPres .btn {
+      display: inline-block;
+      margin-top: 8px; }
+  main .statistic {
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+    padding: 120px;
+    position: relative;
+    overflow: hidden; }
+    main .statistic li {
+      display: inline-block;
+      width: 20%;
+      height: 170px;
+      z-index: 10;
+      position: relative;
+      margin-right: 15px;
+      margin-left: 15px;
+      border: 1px solid dimgrey;
+      border-radius: 2px;
+      vertical-align: top; }
+    main .statistic .statBg {
+      position: absolute;
+      top: 0;
+      width: 51%; }
+    main .statistic .statBg:first-of-type {
+      left: 0; }
+    main .statistic .statBg:last-of-type {
+      transform: scale(-1, 1);
+      right: 0; }
+  main .services ul {
+    width: 100%;
+    margin: 110px auto 70px auto; }
+    main .services ul .icon-wordpress:before {
+      content: "\f19a"; }
+    main .services ul .icon-resp:before {
+      content: "\f108"; }
+    main .services ul .icon-media:before {
+      content: "\f04b"; }
+    main .services ul .icon-graphic:before {
+      content: "\f06e"; }
+    main .services ul .icon-apps:before {
+      content: "\f17b"; }
+    main .services ul .icon-netw:before {
+      content: "\f0c1"; }
+    main .services ul li {
+      border: 1px solid #4e595f;
+      padding: 50px 20px;
+      margin-bottom: 35px;
+      background: #333439;
+      position: relative;
+      transition-duration: 1s;
+      cursor: pointer;
+      border-radius: 2px;
+      box-shadow: 0 0 0 0 #2B2C30, 0 0 0 0 #666;
+      max-width: 400px; }
+      main .services ul li:hover {
+        transition-duration: 0.5s;
+        width: calc(30% + 20px);
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 50px 30px;
+        transform: translate(0, -10px);
+        box-shadow: 0 20px 0px -10px #2B2C30, 0 20px 0px -9px #666; }
+        main .services ul li:hover p, main .services ul li:hover h3, main .services ul li:hover i {
+          color: white;
+          transition-duration: 0.5s;
+          text-shadow: none; }
+      main .services ul li i {
+        margin: 20px 0 20px 0;
+        border-bottom: none;
+        font-size: 5em;
+        color: white; }
+      main .services ul li p, main .services ul li h3, main .services ul li i {
+        color: rgba(255, 255, 255, 0);
+        text-shadow: 0 0 5px white;
+        transition-duration: 1s; }
+
+footer {
+  background: #333439;
+  text-align: center;
+  padding: 60px 0 60px 0;
+  /* Firefox 19+ */
+  /* Firefox 18- */ }
+  footer p, footer a, footer h3 {
+    color: #ddd; }
+  footer > div {
+    text-align: left;
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 60px 2% 60px 2%;
+    max-width: 500px; }
+    footer > div ul {
+      margin-top: 20px; }
+      footer > div ul li {
+        color: #ddd;
+        font-size: 15px; }
+        footer > div ul li i {
+          margin-left: 10px;
+          margin-right: 10px;
+          font-size: 24px;
+          width: 23px;
+          display: inline-block; }
+    footer > div input, footer > div textarea, footer > div button {
+      background: transparent;
+      display: block;
+      border: 1px solid #4e595f;
+      width: 100%;
+      padding: 5px 10px;
+      margin-bottom: 10px;
+      color: #ddd; }
+      footer > div input:focus, footer > div textarea:focus, footer > div button:focus {
+        outline: none !important;
+        border: 1px solid #6CB670;
+        box-shadow: 0 0 5px #6CB670; }
+    footer > div textarea {
+      height: 200px; }
+  footer ::-webkit-input-placeholder {
+    color: #ddd; }
+  footer ::-moz-placeholder {
+    color: #ddd; }
+  footer :-moz-placeholder {
+    color: #ddd; }
+  footer :-ms-input-placeholder {
+    color: #ddd; }
+
+.icon-home::before {
+  content: '\f015'; }
+
+.icon-phone::before {
+  content: "\f095"; }
+
+.icon-fax::before {
+  content: "\f1ac"; }
+
+.icon-email::before {
+  content: "\f0e0"; }
+
+.fix {
+  position: fixed;
+  top: 0; }
+
+.hide {
+  opacity: 0;
+  transition-duration: 1s; }
+
+.add {
+  opacity: 1;
+  transition-duration: 1s; }
+
+@keyframes logo {
+  from {
+    opacity: 0;
+    margin-top: 60px; }
+  to {
+    opacity: 1;
+    margin-top: 0; } }
+@keyframes logo1 {
+  from {
+    opacity: 0;
+    left: 40%; }
+  to {
+    opacity: 1;
+    left: 0; } }
+.icon-btnToTop {
+  position: fixed;
+  top: 91vh;
+  right: 20px;
+  bottom: 15px;
+  width: 30px;
+  font-size: 23px;
+  height: 35px;
+  cursor: pointer; }
+  .icon-btnToTop:before {
+    content: "\f062"; }
+
+/*# sourceMappingURL=styles.css.map */
