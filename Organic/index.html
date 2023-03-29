@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./src/normalize.css">
+      <link rel="stylesheet" href="./owl/owl.carousel.min.css">
+      <link rel="stylesheet" href="./owl/owl.theme.default.min.css">
+      <link rel="stylesheet" href="./src/style.css">
+      <link rel="stylesheet" href="./owl/animate.min.css">
+      <link rel="stylesheet" href="./icomoon/style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+      <link rel="shortcut icon" href="./src/images/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="./src/images/favicon.ico" type="image/x-icon">
+      <title>Organic food store</title>
+   </head>
+   <body>
+      <div id="vue">
+         <div class="header__nav" id="header__nav">
+            <div class="logo">
+               <img src="./src/images/logo.png" alt="logo" class="logo__img">
+            </div>
+            <nav class="nav">
+               <ul class="nav__list">
+                  <li class="nav__item"><a href="#our__shop" class="nav__link" id="nav__link_our_shop">Our Shop</a></li>
+                  <li class="nav__item"><a href="#blog" class="nav__link" id="nav__link_blog">Blog</a></li>
+                  <li class="nav__item"><a href="#recipes" class="nav__link" id="nav__link_recipes">Recipes</a></li>
+                  <li class="nav__item"><a href="#about__us" class="nav__link" id="nav__link_about_us">About Us</a></li>
+               </ul>
+            </nav>
+            <div class="login">
+               <button @click="loginFormOpen()" class="login__btn">Login</button>
+            </div>
+         </div>
+         <div class="login__modal" :class="{none : login_form === false}">
+            <p class="login__modal_title">Enter Your Details</p>
+            <button @click="loginFormClose()" class="login__modal_close">X</button>
+            <form class="login__modal_form">
+               <label for="login__modal_email" class="login__modal_label">
+                  Email
+               </label>
+               <input type="email" required placeholder="Email" class="login__modal_field" id="login__modal_email">
+               <label for="login__modal_pass" class="login__modal_label">
+                  Password
+               </label>
+               <input type="password" required placeholder="Password" class="login__modal_field" id="login__modal_pass">
+               <input type="submit" class="login__modal_btn">
+            </form>
+         </div>
+         <div class="burger">
+            <a href="#" class="burger__link"><span class="burger__link_lines"></span></a>
+            <div class="burger__nav">
+               <a href="#our__shop" class="burger__nav_link">Our Shop</a>
+               <a href="#blog" class="burger__nav_link">Blog</a>
+               <a href="#recipes" class="burger__nav_link">Recipes</a>
+               <a href="#about__us" class="burger__nav_link">About Us</a>
+            </div>
+            <div class="burger__overlay"></div>
+         </div>
+         <header class="header">
+            <div class="header__container">
+               <div class="owl-carousel">
+                  <div class="slider">
+                     <p class="slider__title">Organic Food Store</p>
+                     <p class="slider__subtitle">Current delivery lead times are between 5-7 working days</p>
+                  </div>
+                  <div class="slider">
+                     <p class="slider__title">Healthy Eating</p>
+                     <p class="slider__subtitle">We make the world's beautiful every day</p>
+                  </div>
+                  <div class="slider">
+                     <p class="slider__title">Lorem & Ipsum</p>
+                     <p class="slider__subtitle">We make the world's beautiful every day</p>
+                  </div>
+               </div>
+               <div class="header__shop">
+                  <button class="header__shop_btn">Shop now</button>
+               </div>
+            </div>
+         </header>
+         <div class="our__shop" id="our__shop">
+            <div class="container">
+               <h1 class="our__shop_h1">
+                  Our <span class="our__shop_h1_span">Products</span>
+               </h1>
+               <div class="cards">
+                  <div class="cards__item" v-for="(product, i) in products" :key="product.id">
+                     <img :src="'src/images/' + product.image" alt="product" class="cards__item_img">
+                     <p class="cards__item_title">{{product.title}}</p>
+                     <p class="cards__item_subtitle">{{product.subtitle}}</p>
+                     <p class="cards__item_price">{{product.price}}</p>
+                     <button class="cards__item_btn" :data-id="product.id"><span class="icon-shopping-basket"></span> Buy
+                        now</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="about__us" id="about__us">
+            <div class="container">
+               <h1 class="about__us_title">ABOUT <span class="about__us_title_span">US</span></h1>
+               <p class="about__us_text">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem<br> accusantium doloremque laudantium,
+                  totam
+                  rem aperiam,<br> eaque ipsa quae ab illo inventore veritatis et quasi architecto<br> beatae vitae dicta
+                  sunt
+                  explicabo. Nemo enim ipsam voluptatem quia voluptas
+               </p>
+               <button class="about__us_btn">Find out more</button>
+            </div>
+         </div>
+         <div class="recipes" id="recipes">
+            <div class="container">
+               <h1 class="recipes__title">
+                  RECIPES
+               </h1>
+               <div class="recipes__btns">
+                  <button class="recipes__btn" id="recipes__btn_first">Desserts</button>
+                  <button class="recipes__btn" id="recipes__btn_second">Salads </button>
+                  <button class="recipes__btn" id="recipes__btn_third">Soups</button>
+               </div>
+               <div class="recipes__content" id="recipes__content">
+                  <img src="./src/images/recipes11.jpg" alt="dishes" class="recipes__content_img">
+                  <img src="./src/images/recipes12.jpg" alt="dishes" class="recipes__content_img">
+                  <img src="./src/images/recipes13.jpg" alt="dishes" class="recipes__content_img">
+               </div>
+            </div>
+         </div>
+
+         <div class="blog" id="blog">
+            <div class="container">
+               <h1 class="blog__title">BLOG</h1>
+               <div class="blog__list">
+                  <div class="blog__item" v-for="item in items">
+                     <img :src="'src/images/' + item.image" alt="dishes" class="blog__item_img">
+                     <p class="blog__item_date">{{item.date}}</p>
+                     <p class="blog__item_title">{{item.title}}</p>
+                     <p class="blog__item_content">{{item.content}}</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="contacts">
+            <div class="container">
+               <h1 class="contacts__title">Contacts</h1>
+               <div class="contacts__list">
+                  <p class="contacts__item">Phone <span class="icon-phone contacts__icon"></span> : <a
+                        href="tel:+8793329375" class="contacts__link">+8793329375</a></p>
+                  <p class="contacts__item">Email <span class="icon-envelop contacts__icon"></span> : <a
+                        href="mailto:info@pixsellz.io" class="contacts__link">info@pixsellz.io</a></p>
+                  <p class="contacts__item">Adress <span class="icon-location contacts__icon"></span> : <span
+                        class="contacts__link">Av.
+                        de Concha Espina, 1, 28036 Madrid</span></p>
+               </div>
+               <div class="map">
+                  <iframe
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.0042564823207!2d-3.6905223852363225!3d40.45304276135528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228e23705d39f%3A0xa8fff6d26e2b1988!2z0KHQsNC90YLRjNGP0LPQviDQkdC10YDQvdCw0LHQtdGD!5e0!3m2!1sru!2sua!4v1626957479156!5m2!1sru!2sua"
+                     width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+               </div>
+            </div>
+         </div>
+         <footer class="footer">
+            <div class="container">
+               <div class="footer__content">
+                  <div class="copyright">
+                     <p class="copyright__text">
+                        Copyright &#169; 2021 Beetroot Academy.<br>Have a nice day!
+                     </p>
+                  </div>
+                  <div class="social">
+                     <a href="#" class="social__icon"><span class="icon-facebook"></span></a>
+                     <a href="#" class="social__icon"><span class="icon-instagram"></span></a>
+                     <a href="#" class="social__icon"><span class="icon-twitter"></span></a>
+                  </div>
+               </div>
+            </div>
+         </footer>
+      </div>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <script src="./owl/owl.carousel.min.js"></script>
+      <script src="./src/js/script.js"></script>
+   </body>
+
+</html>
