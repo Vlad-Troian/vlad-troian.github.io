@@ -1,0 +1,489 @@
+*{
+   box-sizing: border-box;
+}
+
+.container{
+   width: 90%;
+   margin: 0 auto;
+}
+
+.header{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.nav{
+   width: 50%;
+}
+
+.nav_list{
+   display: flex;
+   justify-content: space-around;
+}
+
+.nav_item{
+   list-style-type: none;
+}
+
+.nav_link{
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 19px;
+   color: #252A34;
+   text-decoration: none;
+}
+
+.nav_link_active{
+   border-bottom: 2px solid #252A34;
+}
+
+.nav_link:hover{
+   opacity: 70%;
+}
+
+.header_btn{
+   text-decoration: none;
+   padding: 5px 15px;
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 22px;
+   cursor: pointer;
+}
+
+.login{
+   color: #FF2E63;
+   border: none;
+   background-color: transparent;
+   border-radius: 5px;
+   margin-right: 10px;
+}
+
+.login:hover{
+   opacity: 70%;
+}
+
+.register{
+   background-color: #FF2E63;
+   border: none;
+   color: white;
+   border-radius: 5px;
+}
+
+.register:hover{
+   opacity: 70%;
+}
+
+.main{
+   position: relative;
+}
+
+.filters{
+   padding-top: 20px;
+   padding-bottom: 20px;
+   width: 20%;
+   position: sticky;
+   top: 0;
+   left: 0;
+   display: flex;
+   flex-direction: column;
+   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+   float: left;
+}
+
+.filters_price_list{
+   position: relative;
+   margin-bottom: 30px;
+}
+
+.filters_price_checkbox{
+   width: 100%;
+   height: 20px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 0;
+   cursor: pointer;
+}
+
+.filters_price_checkbox:checked ~ .filters_price_item{
+   max-height: 300px;
+}
+
+.filters_price_checkbox:checked ~ .h2_brands_arrow{
+   transform: rotate(180deg);
+}
+
+.filters_price_item{
+   display: flex;
+   justify-content: space-around;
+   max-height: 0;
+   overflow: hidden;
+}
+
+.filters_price_label{
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 19px;
+   color: #999999;
+   margin-left: 10px;
+}
+
+.filters_price_input{
+   border: 1px solid #999999;
+   box-sizing: border-box;
+   border-radius: 5px;
+   width: 95%;
+   height: 35px;
+}
+
+.brands_checkbox{
+   opacity: 0;
+   cursor: pointer;
+   position: absolute;
+   top: 0px;
+   left: 0;
+   height: 20px;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+}
+
+.brands_list{
+   margin-bottom: 30px;
+   position: relative;
+}
+
+.brands_checkbox:checked ~ .brands_item{
+   max-height: 300px;
+}
+
+.brands_checkbox:checked ~ .h2_brands_arrow{
+   transform: rotate(180deg);
+}
+
+.brands_item{
+   max-height: 0;
+   overflow: hidden;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.h2_brands{
+   display: inline-block;
+   margin: 0;
+   margin-left: 10px;
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 26px;
+   letter-spacing: -0.2px;
+   color: #1C1C1C;
+}
+
+.h2_brands_arrow{
+   color: #1C1C1C;
+   font-size: 10px;
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   z-index: -1;
+}
+
+.brands{
+   display: flex;
+   flex-direction: column;
+   
+}
+
+.brands_item{
+   display: flex;
+   justify-content: space-between;
+}
+
+.brands_item_label{
+   cursor: pointer;
+}
+
+.brands_item_checkbox{
+   cursor: pointer;
+}
+
+.brands_item_name{
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 28px;
+   color: #252A34;
+   text-decoration: none;
+}
+
+.brands_item_name:hover{
+   font-weight: bold;
+}
+
+.blans_item_name_opacity{
+   opacity: 60%;
+}
+
+.brands_item_number{
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 28px;
+   color: #252A34;
+   text-decoration: none;
+   opacity: 60%;
+}
+
+.filters_search_list{
+   margin-bottom: 30px;
+}
+
+.filters_search_input{
+   border: 1px solid #999999;
+   box-sizing: border-box;
+   border-radius: 5px;
+   width: 90%;
+   margin: 0 10px;
+   margin-top: 10px;
+   height: 35px;
+}
+
+.h2_contacts{
+   margin: 0;
+   margin-left: 10px;
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 26px;
+   letter-spacing: -0.2px;
+   color: #1C1C1C;
+}
+
+.contacts_name{
+   margin-left: 10px;
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 28px;
+   color: #252A34;
+}
+
+.contacts_value{
+   text-decoration: none;
+   margin-left: 10px;
+   font-weight: 400;
+   font-family: Open Sans;
+   font-style: normal;
+   font-size: 14px;
+   line-height: 28px;
+   color: #252A34;
+}
+
+.shop{
+   width: 75%;
+   margin-left: auto;
+}
+
+.h2_shop{
+   font-family: Rajdhani;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 50px;
+   line-height: 64px;
+   color: #343434;
+}
+
+.shop_list{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.shop_item{
+   display: flex;
+   flex-direction: column;
+   width: calc(33% - 15px);
+   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+   margin-bottom: 30px;
+   padding-bottom: 20px;
+}
+
+.shop_item:nth-child(3n+1) .shop_price{
+   color: #FF2E63;
+}
+
+.shop_item:nth-child(3n+3) .shop_price{
+   color: #FF2E63;
+}
+
+
+
+.shop_img{
+   width: 100%;
+}
+
+.shop_name{
+   font-family: Rajdhani;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 20px;
+   line-height: 26px;
+   color: #252A34;
+   margin-left: 10px;
+}
+
+.shop_price{
+   font-family: Rajdhani;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 30px;
+   line-height: 38px;
+   color: #252A34;
+   margin-top: auto;
+   margin-left: 10px;
+}
+
+.shop_sale{
+   font-family: Rajdhani;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 26px;
+   text-decoration-line: line-through;
+   color: #999999;
+}
+
+.shop_available{
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 19px;
+   color: #343434;
+   margin-left: 10px;
+}
+
+.shop_item_btn{
+   width: 100px;
+   height: 40px;
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 22px;
+   cursor: pointer;
+   background-color: #FF2E63;
+   border: none;
+   color: white;
+   border-radius: 5px;
+   margin: 0 auto;
+}
+
+.shop_item_btn:hover{
+   border: 1px solid black;
+}
+
+.page_number{
+   text-align: center;
+   padding-bottom: 50px;
+   padding-top: 50px;
+}
+
+.page_number_link{
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 25px;
+   color: #343434;
+   text-decoration: none;
+   margin-right: 10px;
+}
+
+.page_number_link_active{
+   color: #346CD9;
+   text-decoration: underline;
+}
+
+.page_number_link:hover{
+   color: #346CD9;
+}
+
+.page_number_btn{
+   border: 1px solid #346CD9;
+   box-sizing: border-box;
+   border-radius: 5px;
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 25px;
+   color: #346CD9;
+   text-decoration: none;
+   padding: 5px 15px;
+}
+
+.page_number_btn:hover{
+   font-weight: 900;
+   border: 1px solid #346CD9;
+}
+
+.footer{
+   display: flex;
+   justify-content: space-around;
+   background-color: #346CD9;;
+   align-items: center;
+   height: 70px;
+}
+
+.footer_logo{
+   width: 50%;
+}
+
+.footer_logo_text{
+   font-family: Rajdhani;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 30px;
+   line-height: 38px;
+   letter-spacing: 0.05em;
+   text-transform: uppercase;
+   color: #FFFFFF;
+}
+
+.footer_nav{
+   width: 45%;
+}
+
+.footer_nav_list{
+   display: flex;
+   justify-content: space-around;
+   list-style-type: none;
+}
+
+.footer_nav_link{
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 19px;
+   color: #FFFFFF;
+   text-decoration: none;
+}
+
+.footer_nav_link:hover{
+   font-weight: 600;
+}

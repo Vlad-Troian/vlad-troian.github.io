@@ -1,0 +1,625 @@
+*{
+   box-sizing: border-box;
+}
+
+body{
+   margin: 0;
+}
+
+.container{
+   width: 90%;
+   margin: 0 auto;
+}
+
+.header{
+   position: relative;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.menu_toggle{
+   position: absolute;
+   top: 0;
+   right: 20px;
+   display: none;
+}
+
+.menu_toggle_label{
+   display: none;
+   position: absolute;
+   top: 0;
+   right: 20px;
+   background-image: url('../image/menu-toggle.svg');
+   width: 30px;
+   height: 30px;
+}
+
+.nav{
+   width: 50%;
+}
+
+.nav_list{
+   display: flex;
+   justify-content: space-between;
+}
+
+.nav_item{
+   list-style-type: none;
+}
+
+.nav_link{
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 19px;
+   color: #252A34;
+   text-decoration: none;
+}
+
+.nav_link_active{
+   border-bottom: 2px solid #252A34;
+}
+
+.nav_link:hover{
+   opacity: 70%;
+}
+
+.header_btn{
+   text-decoration: none;
+   padding: 10px 25px;
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 22px;
+   cursor: pointer;
+}
+
+.login{
+   color: #FF2E63;
+   border: none;
+   background-color: transparent;
+   border-radius: 5px;
+   margin-right: 10px;
+}
+
+.login:hover{
+   opacity: 70%;
+}
+
+.register{
+   background-color: #FF2E63;
+   border: none;
+   color: white;
+   border-radius: 5px;
+}
+
+.register:hover{
+   opacity: 70%;
+}
+
+
+.main{
+   padding-top: 100px;
+   padding-bottom: 100px;
+}
+
+.head_page{
+   display: flex;
+   min-height: 75vh;
+}
+
+.head_text{
+   flex-shrink: 1;
+}
+
+.h1{
+   font-family: Rajdhani;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 45px;
+   line-height: 60px;
+   color: #343434;
+   flex-shrink: 0;
+}
+
+.h1_span{
+   color: #FF2E63;
+}
+
+.enter{
+   width: 160px;
+   height: 50px;
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 22px;
+   text-align: center;
+   color: #FFFFFF;
+   background: #346CD9;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.enter:hover{
+   border: 2px solid black;
+}
+
+.head_img{
+   position: relative;
+   width: 100%;
+}
+
+.ellipse{
+   position: absolute;
+   top: -50px;
+   right: 5%;
+   z-index: -1;
+   width: 60%;
+   max-height: 50%;
+}
+
+.head_car{
+   width: 100%;
+}
+
+.h2{
+   font-family: Rajdhani;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 36px;
+   line-height: 46px;
+   color: #343434;
+}
+
+.car_list{
+   display: flex;
+   justify-content: space-between;
+}
+
+.car_item{
+   position: relative;
+   width: calc(25% - 15px);
+   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+   display: flex;
+   flex-direction: column;
+   border-radius: 10px 10px 10px 0;
+}
+
+.car_item:nth-child(3n+1) .car_price{
+   color: #FF2E63;
+}
+
+.car_img{
+   width: 100%;
+}
+
+.car_name{
+   font-family: Rajdhani;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 20px;
+   line-height: 26px;
+   color: #252A34;
+   margin-left: 10px;
+}
+
+.car_price{
+   font-family: Rajdhani;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 30px;
+   line-height: 38px;
+   color: #252A34;
+   margin-top: auto;
+   margin-left: 10px;
+}
+
+.car_sale{
+   font-family: Rajdhani;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 26px;
+   text-decoration-line: line-through;
+   color: #999999;
+}
+
+.tickets{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.car_ticket{
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 19px;
+   color: #343434;
+   margin-left: 10px;
+}
+
+.ticket_link{
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   background: #346CD9;
+   border-radius: 10px 0px;
+   padding: 7px;
+   text-decoration: none;
+   color: white;
+}
+
+.ticket_link:hover{
+   border: 1px solid black;
+}
+
+.rules{
+   padding-top: 70px;
+   padding-bottom: 90px;
+}
+
+.rules_h2{
+   font-family: Rajdhani;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 36px;
+   text-align: center;
+   color: #343434;
+}
+
+.rules_list{
+   display: flex;
+   justify-content: space-between;
+}
+
+.rules_item{
+   text-align: center;
+   width: 21%;
+}
+
+.rules_item_name{
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 16px;
+   text-align: center;
+   color: #343434;
+}
+
+.rules_item_content{
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   text-align: center;
+   color: #343434;
+}
+
+.rules_item_img{
+   width: 4vw;
+   height: 4vw;
+}
+
+.rules_arrow{
+   font-size: 20px;
+   color: #343434;
+}
+
+.rules_arrow_item{
+   margin-top: 50px;
+   display: inline-block;
+}
+
+.review{
+   display: flex;
+   background: rgba(52, 108, 217, 0.12);
+   align-items: center;
+}
+
+.review_item{
+   width: 50%;
+}
+
+.review_text{
+   width: 80%;
+   margin: 0 auto;
+   
+}
+
+.review_content{
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 20px;
+   text-align: center;
+   color: #343434;
+}
+
+.review_name{
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   text-align: center;
+   text-transform: uppercase;
+   color: #343434;
+}
+
+.review_img{
+   width: 100%;
+}
+
+.latest_articles_h2{
+   margin-top: 100px;
+}
+
+.latest_articles{
+   display: flex;
+   justify-content: space-between;
+}
+
+.latest_articles_item{
+   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+   width: calc(25% - 15px);
+   display: flex;
+   flex-direction: column;
+}
+
+.latest_articles_img{
+   width: 100%;
+}
+
+.latest_articles_name{
+   font-family: Rajdhani;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 20px;
+   line-height: 26px;
+   color: #252A34;
+   margin-left: 10px;
+}
+
+.latest_articles_date{
+   margin-top: auto;
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   color: #343434;
+   margin-left: 10px;
+}
+
+.footer{
+   display: flex;
+   justify-content: space-around;
+   background-color: #346CD9;;
+   align-items: center;
+}
+
+.footer_logo{
+   width: 50%;
+}
+
+.footer_logo_text{
+   font-family: Rajdhani;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 30px;
+   line-height: 38px;
+   letter-spacing: 0.05em;
+   text-transform: uppercase;
+   color: #FFFFFF;
+}
+
+.footer_nav{
+   width: 45%;
+}
+
+.footer_nav_list{
+   display: flex;
+   justify-content: space-around;
+   list-style-type: none;
+}
+
+.footer_nav_link{
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 19px;
+   color: #FFFFFF;
+   text-decoration: none;
+}
+
+.footer_nav_link:hover{
+   font-weight: 600;
+}
+
+
+
+@media (max-width: 1024px) {
+   .head_page{
+      flex-direction: column;
+   }
+   .main{
+      padding: 50px 0;
+   }
+   .nav_link{
+      font-size: 14px;
+   }
+   .header_btn{
+      font-size: 12px;
+      padding: 5px 10px;
+   }
+   .ellipse{
+      display: none;
+   }
+   .car_list{
+      flex-wrap: wrap;
+   }
+   .car_item{
+      width: calc(50% - 15px);
+      margin-bottom: 15px;
+   }
+   .rules_list{
+      flex-wrap: wrap;
+   }
+   .rules_item{
+      width: 45%;
+   }
+   .rules_item_name{
+      font-size: 14px;
+   }
+   .rules_item_content{
+      font-size: 12px;
+   }
+   .rules_arrow{
+      display: none;
+   }
+   .review{
+      flex-direction: column;
+   }
+   .review_content{
+      font-size: 16px;
+   }
+   .review_name{
+      font-size: 12px;
+   }
+   .latest_articles{
+      flex-wrap: wrap;
+   }
+   
+   .latest_articles_item{
+      width: calc(50% - 15px);
+   }
+   
+   .latest_articles_name{
+      font-size: 16px;
+   }
+   
+   .latest_articles_date{
+      font-size: 12px;
+   }
+   
+}
+
+@media (max-width: 840px) {
+   .header{
+      flex-direction: column;
+   }
+   .logo{
+      position: absolute;
+      top: 0;
+      left: 20px
+   }
+   .menu_toggle_label{
+      display: block;
+   }
+   @keyframes menu {
+      0%{
+         transform: translateY(-150%);
+      }
+      50%{
+         transform: translateY(0);
+      }
+   }
+
+   .nav{
+      display: none;
+   }
+   .nav_list{
+      flex-direction: column;
+      text-align: center;
+      margin-left: -40px;
+   }
+
+   .nav_item{
+      margin-bottom: 20px;
+      font-size: 16px;
+   }
+
+   .header_btn_list{
+      display: none;
+   }
+   .header_btn{
+      display: inline-block;
+      margin: 0 auto;
+   }
+
+   .login{
+      margin-right: 15px;
+   }
+   .menu_toggle:checked ~ .nav{
+      animation: menu 1s linear;
+      display: block;
+   }
+   .menu_toggle:checked ~ .header_btn_list{
+      animation: menu 1s linear;
+      display: block;
+   }
+   .car_item{
+      width: calc(80% - 15px);
+      margin: 0 auto;
+      margin-bottom: 15px;
+   }
+   .rules_list{
+      flex-wrap: wrap;
+   }
+   .rules_item{
+      width: 80%;
+      margin: 0 auto;
+   }
+   .rules_item_name{
+      font-size: 12px;
+   }
+   .rules_item_content{
+      font-size: 10px;
+   }
+   .review_content{
+      font-size: 12px;
+   }
+   .review_name{
+      font-size: 10px;
+   }
+   .review_img{
+      width: 70%;
+      margin: 0 auto;
+      display: block;
+   }
+   .latest_articles_item{
+      width: calc(80% - 15px);
+      margin: 0 auto;
+      margin-bottom: 15px;
+   }
+   
+   .latest_articles_name{
+      font-size: 16px;
+   }
+   
+   .latest_articles_date{
+      font-size: 12px;
+   }
+   .footer_logo{
+      display: none;
+   }
+   .footer_nav{
+      width: 100%;
+      text-align: center;
+   }
+   
+   .footer_nav_list{
+     flex-direction: column;
+     margin-left: -40px;
+   }
+   .footer_nav_link{
+      font-size: 16px;
+      margin-bottom: 15px;
+   }
+}

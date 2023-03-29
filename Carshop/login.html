@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./css/log_reg.css">
+      <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+      <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon">
+      <title>Login</title>
+   </head>
+   <body>
+      <header class="header">
+         <div class="logo"><img class="hedaer_logo" src="./image/LOGOAuto.png" alt="logo"></div>
+         <nav class="nav">
+            <ul class="nav_list">
+               <li class="nav_item"><a href="https://vlad-troian.github.io/flex/index.html" class="nav_link">Home</a></li>
+               <li class="nav_item"><a href="#" class="nav_link">About us</a></li>
+               <li class="nav_item"><a href="https://vlad-troian.github.io/flex/shop.html" class="nav_link">Shop</a></li>
+               <li class="nav_item"><a href="#" class="nav_link">Blog</a></li>
+               <li class="nav_item"><a href="#" class="nav_link">Contacts</a></li>
+               <li class="nav_item"><a href="#HowItWorks" class="nav_link">How it Works</a></li>
+            </ul>
+         </nav>
+         <div class="header_btn_list">
+            <a href="https://vlad-troian.github.io/flex/login.html" class="header_btn login">Login</a>
+            <a href="https://vlad-troian.github.io/flex/register.html" class="header_btn register">Register</a>
+         </div>
+      </header>
+      <div class="container">
+         <main class="main">
+            <div class="form_wrapper">
+
+               <input type="radio" class="toggle_item toggle_item_log" id="log_toggle" name="toggle" checked>
+               <input type="radio" class="toggle_item toggle_item_reg" id="reg_toggle" name="toggle">
+
+               <div class="toggle_label">
+                  <label class="toggle_label_name toggle_name_log" for="log_toggle">
+                     Login
+                  </label>
+                  <label class="toggle_label_name toggle_name_reg" for="reg_toggle">
+                     Register
+                  </label>
+               </div>
+               <form action="#" class="form_log">
+                  <div class="form_title">
+                     Login
+                  </div>
+                  <label class="form_label">
+                     <span class="input_name">E-mail</span>
+                     <input type="text" class="form_input" required>
+                  </label>
+                  <label class="form_label">
+                     <span class="input_name">Password</span>
+                     <input type="password" class="form_input" required>
+                     <a href="#" class="forgot">Forgot your password?</a>
+                  </label>
+                  <label class="form_label_remember">
+                     <input type="checkbox" class="form_input_remember">
+                     <span class="input_name_remember">Remember me</span>
+                  </label>
+                  <div class="btn_wrapper">
+                     <input type="submit" value="Login" class="form_btn">
+                  </div>
+               </form>
+               <form action="#" class="form_reg">
+                  <div class="form_title">
+                     Create an Account
+                  </div>
+                  <div class="form_column">
+                     <label class="form_label form_label_column">
+                        <span class="input_name">First Name</span>
+                        <input type="text" class="form_input" required>
+                     </label>
+                     <label class="form_label form_label_column">
+                        <span class="input_name">Last Name</span>
+                        <input type="text" class="form_input" required>
+                     </label>
+                  </div>
+                  <div class="form_column">
+                     <label class="form_label">
+                        <span class="input_name">E-mail</span>
+                        <input type="text" class="form_input" required>
+                     </label>
+                  </div>
+                  <div class="form_column_sex">
+                     <label class="form_label_reg">
+                        <input type="radio" name="sex" value="man" checked>
+                        <span class="input_name">Male</span>
+                     </label>
+                     <label class="form_label_reg">
+                        <input type="radio" name="sex" value="women">
+                        <span class="input_name">Female</span>
+                     </label>
+                  </div>
+                  <div class="form_column">
+                     <label class="form_label form_label_column">
+                        <span class="input_name">Password</span>
+                        <input type="password" class="form_input" required>
+                     </label>
+                     <label class="form_label form_label_column">
+                        <span class="input_name">Confirm Password</span>
+                        <input type="password" class="form_input" required>
+                     </label>
+                  </div>
+                  <div class="btn_wrapper">
+                     <input type="submit" value="Register" class="form_btn">
+                  </div>
+                  <p class="privacy">By clicking the 'Sign Up' button, you confirm that you accept our <a href="#"
+                        class="privacy_link">Terms
+                        of Use</a> and
+                     <a href="#" class="privacy_link">Privacy Policy</a>.
+                  </p>
+               </form>
+            </div>
+         </main>
+      </div>
+      <footer class="footer">
+         <div class="footer_logo">
+            <p class="footer_logo_text">LOGOAUTO</p>
+         </div>
+         <nav class="footer_nav">
+            <ul class="footer_nav_list">
+               <li class="footer_nav_item"><a href="https://vlad-troian.github.io/flex/index.html"
+                     class="footer_nav_link">Home</a></li>
+               <li class="footer_nav_item"><a href="#" class="footer_nav_link">About us</a></li>
+               <li class="footer_nav_item"><a href="https://vlad-troian.github.io/flex/shop.html"
+                     class="footer_nav_link">Shop</a></li>
+               <li class="footer_nav_item"><a href="#" class="footer_nav_link">Blog</a></li>
+               <li class="footer_nav_item"><a href="#" class="footer_nav_link">Contacts</a></li>
+               <li class="footer_nav_item"><a href="#" class="footer_nav_link">How it Works</a></li>
+            </ul>
+         </nav>
+      </footer>
+   </body>
+</html>
