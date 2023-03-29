@@ -1,0 +1,43 @@
+
+// ========= Font ========
+// =========================
+
+    // === Open Sans ===git
+        //  Regular
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../fonts/OpenSans/OpenSans-Regular/OpenSans-Regular.eot);
+    src: url(../fonts/OpenSans/OpenSans-Regular/OpenSans-Regular.eot?#iefix) format('embedded-opentype'),
+            url(../fonts/OpenSans/OpenSans-Regular/OpenSans-Regular.woff) format('woff'),
+            url(../fonts/OpenSans/OpenSans-Regular/OpenSans-Regular.woff2) format('woff2'),
+            url(../fonts/OpenSans/OpenSans-Regular/OpenSans-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+        //  Bold
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.eot);
+    src: url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.eot#iefix) format('embedded-opentype'),
+            url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.woff) format('woff'),
+            url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.woff2) format('woff2'),
+            url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+    // == Dosis ==
+        // bold
+
+@font-face {
+    font-family: 'Dosis';
+    src: url(../fonts/Dosis/Dosis-Bold/Dosis-Bold.eot);
+    src: url(../fonts/Dosis/Dosis-Bold/Dosis-Bold.eot#iefix) format('embedded-opentype'),
+            url(../fonts/Dosis/Dosis-Bold/Dosis-Bold.woff) format('woff'),
+            url(../fonts/Dosis/Dosis-Bold/Dosis-Bold.woff2) format('woff2'),
+            url(../fonts/Dosis/Dosis-Bold/Dosis-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+   
